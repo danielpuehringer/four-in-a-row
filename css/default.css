@@ -1,0 +1,113 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+
+#output {
+    font-family: Courier;
+}
+
+#gridView{
+    width: 700px;
+    height: 904px;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+#buttonView{
+    width: 700px;
+    margin: auto;
+}
+.blue{
+    fill: #123093;
+}
+
+.white{
+    fill: #FFFFFF;
+}
+
+.red{
+    fill: #ED3316;
+}
+
+.yellow{
+    fill: #EDD212;
+}
+
+
+.overlay-red{
+    opacity: 0.4;
+    fill: #FFFFFF;
+    animation: pulse-red 0.5s linear infinite;
+}
+
+@keyframes pulse-red {
+    from {
+        stroke-opacity: 1;
+        fill: #ED3316;
+    }
+    to {
+        stroke-opacity: 0;
+        fill:#123093;
+
+    }
+}
+
+.overlay-yellow{
+    opacity: 0.4;
+    fill: #FFFFFF;
+    animation: pulse-yellow 0.5s linear infinite;
+}
+
+@keyframes pulse-yellow {
+    from {
+        stroke-opacity: 1;
+        fill: #EDD212;
+    }
+    to {
+        stroke-opacity: 0;
+        fill:#123093;
+
+    }
+}
+
+#selectCol{
+    border: 1px solid #123093;
+    height: 102px;
+    width: 702px;
+}
+
+#selectCol div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    float: left;
+}
+
+#buttonView{
+    margin: 50px auto;
+}
+
+.infoField{
+    float: right;
+    width: calc(100% - 150px);
+}
+
+#thumbSliderView{
+    width: 0;
+    height: 0;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-top: 60px solid;
+    border-top-color: #ED3316;
+    float: left;
+}
+
+#sliderView{
+    cursor: pointer;
+    height: 70px;
+}
+
+
+
